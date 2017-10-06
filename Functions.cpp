@@ -28,6 +28,7 @@ wstring cd(string command, string &path)
 		path=command;
 	}
 	path+="\\";
+	
 	cout<<path<<endl;
 	path.push_back('*');
 	return wstring(path.begin(), path.end());
@@ -79,7 +80,6 @@ void playlist_create(string command, WIN32_FIND_DATA &winFileData, HANDLE  &hFil
 	}
 	cout<<"Was created!"<<endl;
 }
-
 void exit()
 {
 	cout<<"END"<<endl;
