@@ -15,8 +15,8 @@ using namespace std;
 int main()
 {
 	//_setmode(_fileno(stdout), _O_U16TEXT);
-	wcout.imbue(locale("rus_rus.866"));//для вывода
-    wcin.imbue(locale("rus_rus.866"));//для ввода
+	wcout.imbue(locale("rus_rus.866"));//Г¤Г«Гї ГўГ»ГўГ®Г¤Г 
+    wcin.imbue(locale("rus_rus.866"));//Г¤Г«Гї ГўГўГ®Г¤Г 
 	WIN32_FIND_DATA winFileData;
 	HANDLE  hFile;
 	string command;
@@ -52,5 +52,7 @@ int main()
 		}*/
 		}
 	}
+	
     return 0;
+	
 }
