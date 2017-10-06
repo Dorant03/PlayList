@@ -1,6 +1,5 @@
 #include <fstream>
 #include <iostream>
-
 using namespace std;
 
 struct tags
@@ -18,6 +17,7 @@ char style;
 
 class PlayList
 {
+
 private:
 	ofstream playlist;
 public:
