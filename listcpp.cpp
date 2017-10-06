@@ -33,23 +33,29 @@ int main()
 		{
 			ls(winFileData, hFile);
 		}
-		if(command.find("playlist create")==0)
+		if(command.find("create")==9)
 		{
 			command=command.substr(command.find(" ")+1);
 			command=command.substr(command.find(" ")+1);
 			playlist_create(command, winFileData, hFile);
-			/*fplaylist<<"#EXTINF: ";
-			FILE *file1;
-	        file1 = fopen("D:\\myzuka\\Nickelback_-__Photograph_.mp3", "rb");
-            tags header;
-	        fseek(file1, -128, SEEK_END); 
-			fread(&header,sizeof(header),1,file1);
-			fplaylist<<header.name<<" - ";
-			fplaylist<<header.artist<<" - ";
-			fplaylist<<header.year<<endl;
-			fplaylist<<"D:\\myzuka\\Nickelback_-__Photograph_.mp3"<<endl;
-			fclose(file1);
-		}*/
+		}
+		if(command.find("folder")==13)
+		{
+			command=command.substr(command.find(" ")+1);
+			command=command.substr(command.find(" ")+1);
+			command=command.substr(command.find(" ")+1);
+			playlist_add_folder(command, winFileData, hFile);
+		}
+		if(command.find("file")==13)
+		{
+			command=command.substr(command.find(" ")+1);
+			command=command.substr(command.find(" ")+1);
+			command=command.substr(command.find(" ")+1);
+			playlist_add_file(command, winFileData, hFile);
+		}
+		if(command.find("help")==0)
+		{
+			help();
 		}
 	}
     return 0;

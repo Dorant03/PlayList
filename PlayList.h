@@ -20,5 +20,7 @@ private:
 	ofstream playlist;
 public:
 	PlayList(string _name);
+	PlayList(string _name, int);
 	void out(string info);
+	~PlayList();
 };
