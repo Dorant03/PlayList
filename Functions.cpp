@@ -29,6 +29,7 @@ wstring cd(string command, string &path)
 		path=command;
 	}
 	path+="\\";
+	
 	cout<<path<<endl;
 	path.push_back('*');
 	return wstring(path.begin(), path.end());
@@ -150,7 +151,6 @@ void help()
 	cout<<"playlist create <name playlist> <name folder>"<<endl;
 	cout<<"playlist add <folder or file or playlist> <name>"<<endl;
 }
-
 void exit()
 {
 	cout<<"END"<<endl;
