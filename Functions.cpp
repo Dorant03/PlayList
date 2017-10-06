@@ -27,6 +27,7 @@ wstring cd(string command, string &path)
 	{
 		path=command;
 	}
+	
 	path+="\\";
 	cout<<path<<endl;
 	path.push_back('*');
