@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 struct tags
@@ -13,6 +14,7 @@ char byte;
 char track;
 char style;
 };
+
 
 class PlayList
 {
